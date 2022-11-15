@@ -30,36 +30,36 @@ public class Main {
             System.out.println("0.Вийти");
             System.out.print("Вибрати з меню:");
 
-            i= InputScanner.readInteger();
+            i=Keyboard.readInteger();
             menu(i);
         }while(i!=0);
     }
     // Метод для додавання контакту в телефонну книгу
     public void addContactToPhonebook(){
         System.out.println("Ім'я: ");
-        String name= InputScanner.readString();
+        String name=Keyboard.readString();
         System.out.println("Адреса: ");
-        String address= InputScanner.readString();
+        String address=Keyboard.readString();
         System.out.println("Номер телефону: ");
-        String phoneNumber= InputScanner.readString();
+        String phoneNumber=Keyboard.readString();
         System.out.println("Електронна пошта: ");
-        String email= InputScanner.readString();
+        String email=Keyboard.readString();
         System.out.println("Вік: ");
-        String age= InputScanner.readString();
+        String age=Keyboard.readString();
         myPhonebook.addItem(new ContactLarger(name,address,phoneNumber,email,age));
     }
 
 
     // метод для пошуку контакту за іменем
     public void searchByName(){
-        System.out.print("Пошук за іменем: ");
-        String name = InputScanner.readString();
+        System.out.print("Пошук  іменем: ");
+        String name = Keyboard.readString();
         myPhonebook.searchItemByName(name);
     }
     //метод для пошуку контакту за електронню поштою
     public void searchByEmail(){
         System.out.print("Пошук за електронною поштою: ");
-        String email = InputScanner.readString();
+        String email = Keyboard.readString();
         myPhonebook.searchItemByEmail(email);
     }
     // Метод для виведення усіх контактів

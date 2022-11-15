@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 
-public class InputScanner {
+public class Keyboard {
     private static final BufferedReader keyboard =
             new BufferedReader(new InputStreamReader(System.in));
 

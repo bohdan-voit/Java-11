@@ -2,7 +2,9 @@
 import java.util.ArrayList;
 
 
-//Методи додавання імені, адреси та номера до книги та для пошуку за іменем.
+//Методи додавання імені, адреси та номера до книги та
+// для пошуку за іменем.
+
 public class Phonebook {
     //Instance variables:
     private String phonebookName;
